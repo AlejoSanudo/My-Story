@@ -4,4 +4,7 @@ jQuery ->
 
   $(document).on 'click', ->
     console.log('hello')
-    window.moveTo(250,250)
+    #QUAKE
+    #EXPLODE
+    src =
+    $('.magic-meter').attr("src",src)

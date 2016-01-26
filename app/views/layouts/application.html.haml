@@ -6,7 +6,8 @@
 %body
   %nav.navbar
     .container
-      .navbar-header
-        %a.navbar-brand
-          Alex.
+      -# %img#hearts{:src => "http://www.nureek.com/zozo/products_pages/pixel-hearts.png"}
+      =image_tag "pixel-hearts.png", class: "hearts pull-left"
+      =image_tag "pixel-hearts-damaged.png", class: "hearts pull-left"
+      -# =image_tag "magic-meter-full.png", class: "magic-meter pull-left"
 = yield
