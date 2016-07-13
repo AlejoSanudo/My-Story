@@ -83,6 +83,7 @@ GEM
     mime-types (2.99)
     mini_portile2 (2.0.0)
     minitest (5.8.4)
+    mousetrap-rails (1.4.6)
     multi_json (1.11.2)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
@@ -174,6 +175,7 @@ DEPENDENCIES
   jquery-rails (= 3.1.2)
   jquery-turbolinks (= 2.1.0)
   jquery-ui-rails (= 5.0.5)
+  mousetrap-rails
   pry
   pry-byebug
   pry-rails
