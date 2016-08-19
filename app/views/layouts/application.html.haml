@@ -1,9 +1,14 @@
-%head
-  %title Alex
-  = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
-  = javascript_include_tag 'application', 'data-turbolinks-track' => true
-  = csrf_meta_tags
-%body
-  %nav.navbar
-    .container
-= yield
+!!!
+-# http://stackoverflow.com/questions/12868977/conditional-html-tag-in-haml
+/[if lte IE 8] <html class="old-ass-ie ie8" lang="en">
+/[if IE 9] <html class="old-ass-ie ie9" lang="en">
+<!--[if gt IE 9]><!-->
+%html{:lang => 'en'}
+  <!--<![endif]-->
+  %head
+    = render "layouts/application_head"
+    :javascript
+      window.dvCurrent=#{current_data_for_javascript}
+    = render "layouts/application_navbar"
+    = render "layouts/application_body"
+    = render "layouts/application_footer"
