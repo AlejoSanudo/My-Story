@@ -12,4 +12,9 @@ module IconHelper
     content_tag(:span, icon(name), title: tooltip, "data-toggle" => :tooltip)
   end
 
+  def app_logo
+    logo_url = "logo.png"
+    image_tag(logo_url, class: "logo")
+  end
+
 end

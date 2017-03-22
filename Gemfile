@@ -45,4 +45,5 @@ group :development, :test do
   gem 'pry-rails'
   gem 'spring'
   gem 'faker'
+  gem 'better_errors', '~> 2.1.1'
 end
