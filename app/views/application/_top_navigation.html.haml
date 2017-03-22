@@ -1,0 +1,4 @@
+%ul.nav.navbar-nav
+  - menu_items.each do |menu_item|
+    %li{ id: menu_item[:key], class: menu_item[:class]  }
+      = link_to menu_item[:label], menu_item[:path]
